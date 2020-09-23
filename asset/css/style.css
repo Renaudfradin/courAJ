@@ -7,6 +7,7 @@ body{
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     position: relative;
+    scroll-behavior: smooth;
 }
 a{
     text-decoration: none;
@@ -33,7 +34,7 @@ main{
 header{
     background: black;
 }
-header li{
+header nav > ul > li{
     display: inline-block;
 }
 .menu1{
@@ -46,6 +47,19 @@ header li{
 header a:link, header a:visited{
     color: white;
 }
+    /*Debut submenu*/
+.sub-menu{
+    display: none;
+    background: black;
+    position: absolute;
+    margin-left: -10px;
+    padding: 10px;
+    list-style: none;
+}
+header nav > ul > li:hover .sub-menu{
+    display: block;
+}
+    /*Fin submenu*/
 /*Fin nav */
 
 /*Debut diapo */
@@ -53,7 +67,7 @@ header a:link, header a:visited{
     max-width: 100%;
     height: auto;
 }
-/*Fin nav */
+/*Fin diapo */
 
 /*Debut contenue article dernier meilleur */
     /*Debut article */
