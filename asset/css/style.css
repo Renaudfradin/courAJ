@@ -2,7 +2,19 @@ body{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    
+    font-family: 'Open Sans', sans-serif;
+}
+#top a:hover{
+    color: red;
+}
+#top a{
+    margin-left: 10px;
+}
+.menu2 nav ul a:hover{
+    color:red;
+}
+.menu2 nav ul a{
+    margin-left: 10px;
 }
 .diapo{
     max-width: 100%;
@@ -49,7 +61,6 @@ main{
     margin-top: 20px;
     
 }
-
 .imgarticle{
     float: left; 
     margin:0 20px 20px 0;
@@ -71,19 +82,95 @@ main{
     border-radius: 10px;
     margin-top: 20px;
 }
+.section article a{
+    color: black;
+}
+.section article a:hover{
+    color: red;
+}
+
 .lastpro{
     background: black;
     color: rgb(236, 214, 214);
     display: inline-block;
     padding: 5px 5px 5px 5px;
 }
+
+
 #last article{
     text-align: center;
     float: left;
     width: calc(33.3% - 40px);
     padding: 20px;
 }
+
+
 .imgarticletech{
     width: 100%;
     height: 10%;
+}
+#best article{
+    display: inline-block;
+    width: calc(33.3% - 40px);
+    text-align: center;
+    padding: 20px;
+}
+
+
+.reassurance{
+    background: #fff;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.reassurance i{
+    font-size: 2rem;
+    display: block;
+}
+.reassurance small{
+    display: block;
+}
+.reassurance a{
+    color: black;
+    text-align: center;
+}
+.reassurance a:hover{
+    color: red;
+}
+
+
+.footer{
+    background: black;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+.footer1{
+    display: flex;
+    justify-content: space-between;
+}
+.footer section{
+    display: block;
+}
+
+.infoadress a,.info a{
+    color: white;
+    font-style: normal;
+}
+.infoadress a:hover,.info a:hover {
+    color: red;
+}
+.imglogoand{
+    margin-top: 1rem;
+}
+.resault a{
+    font-size: 3rem;
+    color: white;
+}
+.resault a:hover{
+    color: red;
+}
+.hvide{
+    display:none;
 }
