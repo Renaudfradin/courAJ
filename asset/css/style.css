@@ -1,9 +1,23 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    position: relative;
 }
+a{
+    text-decoration: none;
+}
+main{
+    padding-top: 15px;
+    margin-top: -5px;
+    width: 100%;
+}
+
+/*Debut nav */
 #top a:hover{
     color: red;
 }
@@ -15,14 +29,6 @@ body{
 }
 .menu2 nav ul a{
     margin-left: 10px;
-}
-.diapo{
-    max-width: 100%;
-    height: auto;
-}
-.container{
-    max-width: 1170px;
-    margin: 0 auto;
 }
 header{
     background: black;
@@ -37,20 +43,20 @@ header li{
     padding-left: 0%;
     display: flex;
 }
-a{
-    text-decoration: none;
-}
 header a:link, header a:visited{
     color: white;
 }
-.contenue{
-    background: gray;
+/*Fin nav */
+
+/*Debut diapo */
+.diapo{
+    max-width: 100%;
+    height: auto;
 }
-main{
-    padding-top: 15px;
-    margin-top: -5px;
-    width: 100%;
-}
+/*Fin nav */
+
+/*Debut contenue article dernier meilleur */
+    /*Debut article */
 .article{
     background: black;
     color: white;
@@ -64,6 +70,14 @@ main{
 .imgarticle{
     float: left; 
     margin:0 20px 20px 0;
+}
+.contenue{
+    background: gray;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
 }
 .clearfix::after {
     clear: both;
@@ -88,22 +102,20 @@ main{
 .section article a:hover{
     color: red;
 }
-
+    /*Fin article */
+    /*Debut dernier et meilleurs */
 .lastpro{
     background: black;
     color: rgb(236, 214, 214);
     display: inline-block;
     padding: 5px 5px 5px 5px;
 }
-
-
 #last article{
     text-align: center;
     float: left;
     width: calc(33.3% - 40px);
     padding: 20px;
 }
-
 
 .imgarticletech{
     width: 100%;
@@ -115,8 +127,10 @@ main{
     text-align: center;
     padding: 20px;
 }
+    /*Fin dernier et meilleurs */
+/*Fin contenue article dernier meilleur */
 
-
+/*Debut reassure*/
 .reassurance{
     background: #fff;
     padding: 30px 0;
@@ -137,8 +151,9 @@ main{
 .reassurance a:hover{
     color: red;
 }
+/*Fin reassure*/
 
-
+/*Debut footer*/
 .footer{
     background: black;
     color: white;
@@ -153,10 +168,10 @@ main{
 .footer section{
     display: block;
 }
-
 .infoadress a,.info a{
     color: white;
     font-style: normal;
+    display: block;
 }
 .infoadress a:hover,.info a:hover {
     color: red;
@@ -174,3 +189,43 @@ main{
 .hvide{
     display:none;
 }
+/*Fin footer*/
+
+/*Debut bouton partage sur la gauche*/
+.barresault{
+    background: black;
+    display: inline-block;
+    left: 0;
+    border-radius: 0% 5% 5% 0%;
+    box-shadow: 1px 1px 30px white;
+    position: fixed;
+    top: 30%;
+    left: 0;
+}
+.barresault a{
+    color: white;
+    display: block;
+    font-size: 1.5rem;
+    margin: 10px 10px 10px 10px;
+}
+.barresault a:hover{
+    color: red;
+}
+/*Fin bouton partage sur la gauche*/
+
+/*Debut triangle rouge*/
+.trianglerr{
+    right: 10px;
+    bottom: 10px;
+    position: absolute;
+    
+}
+.arrow-up{
+    display : inline-block;
+    height : 0;
+    width : 0;
+    border-right : 20px solid transparent;
+    border-bottom : 40px solid red;
+    border-left : 20px solid transparent;
+}
+/*Fin triangle rouge*/
